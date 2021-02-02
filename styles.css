@@ -20,7 +20,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 html{
     font-size: 62.5%;
@@ -282,7 +282,7 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px; /* buscar overflow */
     margin: 15px auto;
     padding: 15px;
     background-color: var(--warm-black);
@@ -311,4 +311,51 @@ main{
     font-weight: 500;
     line-height: 1.8rem;
     color:#949090
+}
+/* ------------------------------seccion comodin------------------------------ */
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bitcoin-img-container h2{
+padding-top: 60px;
+font-size: 2.4rem;
+font-weight: bold;
+line-height: 2.6rem;
+color: var(--just-white);
+text-align: center;
+}
+/* ------------------------------ seccion planes ------------------------------ */
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.plans-title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans-title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans-title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
 }
