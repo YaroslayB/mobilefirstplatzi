@@ -20,7 +20,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 html{
     font-size: 62.5%;
@@ -361,30 +361,63 @@ text-align: center;
 }
 /* Comenzando con las tarjetas */
 .plans-container--slider{
-    scroll-snap-align: center;
-    max-width: 900px;
-    margin-right: 10px; /*margen momentaneo de las tarjetas*/
+    max-width: 910px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     height: 316px;
+    overflow-y: hidden;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    /* flex-wrap: wrap; */
-
+    /* padding-right: 5px;
+    padding-left: 5px;  etso es para cuando este en mas de 900px*/
+    
 }
 .plans-container--card{
     position: relative;
-    scroll-snap-align: center;
-    width: 70%;
-    min-width: 230px;
+   scroll-snap-align: center;  /* sirve para centrar automaticamente el contenido de cada tajeta */
+    width: 65%;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 25px 0;
+    margin: 50px 0 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+
+.plans-container--card.recomendado{
+    margin: 50px 10px 0;
+}
+
+/* ------------------------ para los espaciados en las tarjetas----------------------------- */
+/* .plans-container--card.derecha{
+    margin-right:10px;
+}
+.plans-container--card.izquierda{
+    margin-left:10px;
+} */
+/* .icon-right{
+    display: flex;
+    background-image: url('./assets/icons/right-arrow.svg');
+    width: 50px;
+    height: 50px;
+    background-position: center ;   
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* ----------------------------------------------------- */
+
+
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+  .plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
 .recomended{
     position: absolute;
     width: 120px;
@@ -397,7 +430,6 @@ text-align: center;
     border-radius: 8px;
     color: var(--just-white);
 }
-
 .plan-card--title{
     padding-top:30px;
     padding-left: 5px;
@@ -427,8 +459,8 @@ text-align: center;
 }
 .plan-card--ca{
     width: 150px;
-    height: 48px;
-    margin-top: 20px;
+    height: 38px;
+    margin-top: 30px;
     background-color: #faf8f7;
     border: 2px solid var(--bitcoin-orange);
     border-radius: 5px;
