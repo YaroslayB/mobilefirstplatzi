@@ -20,7 +20,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 html{
     font-size: 62.5%;
@@ -244,7 +244,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding: 20px 10px;
+    padding: 20px 10px 40px;
     background-color: var(--black);
 }
 .product-detail--logo{
@@ -335,7 +335,7 @@ text-align: center;
 .main-plans-container{
     width: 100%;
     min-width: 320px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     text-align: center;
 }
 .plans-title{
@@ -476,4 +476,31 @@ text-align: center;
     height:20px;
     background-image: url('./assets/icons/orange-right-arrow.svg');
     vertical-align: text-bottom; /*para alinear verticalmente el icono con el texto del boton*/
+}
+/* ------------------------------------------------- */
+footer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 20px 0;
+}
+.left a{
+    color: var(--just-white);
+    text-decoration: none;
 }
